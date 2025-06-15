@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, MapPin, Phone } from "lucide-react";
+import { Mail, Linkedin, MapPin, Github } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -16,6 +16,12 @@ const Contact = () => {
       label: "LinkedIn",
       value: "linkedin.com/in/malleshwariboya",
       href: "https://www.linkedin.com/in/malleshwariboya"
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      value: "github.com/malleshwariboya79",
+      href: "https://github.com/malleshwariboya79"
     },
     {
       icon: MapPin,
@@ -99,6 +105,14 @@ const Contact = () => {
                 >
                   <Linkedin size={20} />
                   Connect on LinkedIn
+                </Button>
+                <Button 
+                  variant="outline" 
+                  className="w-full justify-start gap-3 hover:bg-blue-50 hover:border-blue-300"
+                  onClick={() => window.open('https://github.com/malleshwariboya79', '_blank')}
+                >
+                  <Github size={20} />
+                  View GitHub Profile
                 </Button>
               </div>
               
