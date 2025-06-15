@@ -6,18 +6,6 @@ import { CalendarDays, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Frontend Developer Intern",
-      company: "CloudCredits Technologies Pvt. Ltd.",
-      location: "Remote",
-      period: "May 2025 - July 2025",
-      description: [
-        "Developing and maintaining responsive React.js applications",
-        "Working on reusable components and UI logic",
-        "Improved UI responsiveness and user experience with clean code practices"
-      ],
-      technologies: ["React.js", "JavaScript", "CSS3", "UI/UX"]
-    },
-    {
       title: "Developer Intern",
       company: "OpticThirdEyeSolutions",
       location: "Remote",
@@ -27,6 +15,18 @@ const Experience = () => {
         "Learning modern frontend development practices"
       ],
       technologies: ["Angular", "TypeScript", "Web Development"]
+    },
+    {
+      title: "Frontend Developer Intern",
+      company: "CloudCredits Technologies Pvt. Ltd.",
+      location: "Remote",
+      period: "May 2024 - Apr 2025",
+      description: [
+        "Developing and maintaining responsive React.js applications",
+        "Working on reusable components and UI logic",
+        "Improved UI responsiveness and user experience with clean code practices"
+      ],
+      technologies: ["React.js", "JavaScript", "CSS3", "UI/UX"]
     },
     {
       title: "Web Development Intern",
