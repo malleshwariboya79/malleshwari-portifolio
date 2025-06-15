@@ -1,8 +1,19 @@
-
 import { ChevronDown, Mail, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [currentRole, setCurrentRole] = useState(0);
+  const roles = ["Frontend Developer", "Full Stack Developer", "Backend Developer"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRole((prev) => (prev + 1) % roles.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollToAbout = () => {
     const element = document.getElementById("about");
     if (element) {
@@ -20,9 +31,11 @@ const Hero = () => {
               Malleshwari
             </span>
           </h1>
-          <h2 className="text-2xl md:text-3xl text-gray-600 mb-8">
-            Frontend Developer
-          </h2>
+          <div className="h-16 flex items-center justify-center mb-8">
+            <h2 className="text-2xl md:text-3xl text-gray-600 transition-all duration-500 ease-in-out">
+              {roles[currentRole]}
+            </h2>
+          </div>
           <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-3xl mx-auto leading-relaxed">
             Motivated Frontend Developer with hands-on experience in React.js, JavaScript, HTML5, and CSS3. 
             I aim to build impactful, user-friendly web applications that solve real-world problems.
