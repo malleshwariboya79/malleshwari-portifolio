@@ -18,6 +18,17 @@ const Experience = () => {
       technologies: ["React.js", "JavaScript", "CSS3", "UI/UX"]
     },
     {
+      title: "Developer Intern",
+      company: "OpticThirdEyeSolutions",
+      location: "Remote",
+      period: "Jan 2025 - Apr 2025",
+      description: [
+        "Working on Angular Framework to develop applications",
+        "Learning modern frontend development practices"
+      ],
+      technologies: ["Angular", "TypeScript", "Web Development"]
+    },
+    {
       title: "Web Development Intern",
       company: "CodeTech IT Solutions",
       location: "Remote",
@@ -29,17 +40,6 @@ const Experience = () => {
         "Collaborated with designers and developers to improve usability"
       ],
       technologies: ["HTML5", "CSS3", "JavaScript", "React.js", "API Integration", "GitHub"]
-    },
-    {
-      title: "Developer Intern",
-      company: "OpticThirdEyeSolutions",
-      location: "Remote",
-      period: "Jan 2025 - Apr 2025",
-      description: [
-        "Working on Angular Framework to develop applications",
-        "Learning modern frontend development practices"
-      ],
-      technologies: ["Angular", "TypeScript", "Web Development"]
     },
     {
       title: "Python Intern",
